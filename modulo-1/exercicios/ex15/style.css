@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(235, 188, 158);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+h1 {
+    color: rgb(167, 22, 89);
+    background-color: rgb(94, 231, 67);
+    font-size: 30px;
+}
+
+h2 {
+    color: rgb(202, 48, 79);
+    font-size: 20px;
+}
+
+p {
+    text-align: justify;
+}
