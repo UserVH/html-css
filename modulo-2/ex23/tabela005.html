@@ -6,6 +6,11 @@
     <title>Exercício de Tabelas</title>
     <style>
         
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -46,119 +51,129 @@
             background-color: pink;
         }
 
+        .container { 
+            overflow-x: auto; /* comando para tirar rolagem lateral na tela */
+        }
+
+        .container{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           
+        }
+
     </style>
 </head>
 <body>
 
     <h1>Exercício de Tabela</h1>
-    
-    <table>
 
-        <colgroup> 
-        <col class="cnome">
-        <col class="cgrupo" span="2">
-        <col class="cprof">
-        </colgroup>
+ <div class="container">
+     
+     <table>
+         <colgroup>
+         <col class="cnome">
+         <col class="cgrupo" span="2">
+         <col class="cprof">
+         </colgroup>
+         <caption> Cadastro </caption>
+         <tr>
+             <th scope="col">Nome</th>
+             <th scope="col">Sexo</th>
+             <th scope="col">Idade</th>
+             <th scope="col">Profissão</th>
+         </tr>
+         <tr>
+             <td>Ana Maria</td>
+             <td>F</td>
+             <td>25</td>
+             <td>Jornalista</td>
+         </tr>
+         <tr>
+             <td>Rodrigo</td>
+             <td>M</td>
+             <td>18</td>
+             <td>Progamador</td>
+         </tr>
+         <tr>
+             <td>Mario</td>
+             <td>M</td>
+             <td>18</td>
+             <td>Mecânico</td>
+         </tr>
+         <tr>
+             <td>Daniel</td>
+             <td>M</td>
+             <td>28</td>
+             <td>Medico</td>
+         </tr>
+         <tr>
+             <td>Ângelo</td>
+             <td>M</td>
+             <td>23</td>
+             <td>Nutricionista</td>
+         </tr>
+         <tr>
+             <td>Maria Júlia</td>
+             <td>F</td>
+             <td>30</td>
+             <td>Professora</td>
+         </tr>
+     </table>
+ </div>
 
-        <caption> Cadastro </caption>
-
-        <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Sexo</th>
-            <th scope="col">Idade</th>
-            <th scope="col">Profissão</th>
-        </tr>
-        <tr>
-            <td>Ana Maria</td>
-            <td>F</td>
-            <td>25</td>
-            <td>Jornalista</td>
-        </tr>
-        <tr>
-            <td>Rodrigo</td>
-            <td>M</td>
-            <td>18</td>
-            <td>Progamador</td>
-        </tr>
-        <tr>
-            <td>Mario</td>
-            <td>M</td>
-            <td>18</td>
-            <td>Mecânico</td>
-        </tr>
-        <tr>
-            <td>Daniel</td>
-            <td>M</td>
-            <td>28</td>
-            <td>Medico</td>
-        </tr>
-        <tr>
-            <td>Ângelo</td>
-            <td>M</td>
-            <td>23</td>
-            <td>Nutricionista</td>
-        </tr>
-        <tr>
-            <td>Maria Júlia</td>
-            <td>F</td>
-            <td>30</td>
-            <td>Professora</td>
-        </tr>
-    </table>
-
-    <table>
-
-        <colgroup> 
-        <col class="crosa">
-        <col class="cazul">
-        <col class="crosa">
-        <col class="cazul">
-        </colgroup>
-
-        <caption> Segundo Cadastro</caption>
-
-        <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Sexo</th>
-            <th scope="col">Idade</th>
-            <th scope="col">Profissão</th>
-        </tr>
-        <tr>
-            <td>Ana Maria</td>
-            <td>F</td>
-            <td>25</td>
-            <td>Jornalista</td>
-        </tr>
-        <tr>
-            <td>Rodrigo</td>
-            <td>M</td>
-            <td>18</td>
-            <td>Progamador</td>
-        </tr>
-        <tr>
-            <td>Mario</td>
-            <td>M</td>
-            <td>18</td>
-            <td>Mecânico</td>
-        </tr>
-        <tr>
-            <td>Daniel</td>
-            <td>M</td>
-            <td>28</td>
-            <td>Medico</td>
-        </tr>
-        <tr>
-            <td>Ângelo</td>
-            <td>M</td>
-            <td>23</td>
-            <td>Nutricionista</td>
-        </tr>
-        <tr>
-            <td>Maria Júlia</td>
-            <td>F</td>
-            <td>30</td>
-            <td>Professora</td>
-        </tr>
-    </table>
+    <div class="container">
+        <table>
+            <colgroup>
+            <col class="crosa">
+            <col class="cazul">
+            <col class="crosa">
+            <col class="cazul">
+            </colgroup>
+            <caption> Segundo Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Progamador</td>
+            </tr>
+            <tr>
+                <td>Mario</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Mecânico</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Medico</td>
+            </tr>
+            <tr>
+                <td>Ângelo</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Nutricionista</td>
+            </tr>
+            <tr>
+                <td>Maria Júlia</td>
+                <td>F</td>
+                <td>30</td>
+                <td>Professora</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
