@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+
+       fieldset {
+        border: 5px ridge rgba(0, 0, 0, 0.637);
+       }
+
+    </style>
 </head>
 <body>
-    
+
+    <h1>Exemplo de Formulário</h1>
+
+    <form method="get">
+        <fieldset>
+
+            <legend>Sexo</legend>
+
+            <label for="imas">Masculino</label><input type="radio" name="sex" id="imas" value="M"><br>
+
+            <label for="ifem">Feminino</label><input type="radio" name="sex" id="ifem" value="F"><br>
+
+        </fieldset>
+        <fieldset>
+
+            <legend>Esportes favoritos</legend>
+
+            <input type="checkbox" name="esbas" id="iesbas"> Basquete
+
+            <input type="checkbox" name="esfut" id="iesfut"> Futebol
+
+            <input type="checkbox" name="esnat" id="iesnat"> Natação        
+
+            <input type="checkbox" name="esten" id="iesten"> Tênis
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
 </body>
 </html>
