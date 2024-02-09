@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-icons" id="iburguer" onclick="clickMenu()">menu</span>
+        <menu id="ilist">
+            <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+        </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Testando Media Queries</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repellendus! Ullam, nesciunt enim dicta at sed, quisquam quo rerum fugit ipsa consectetur autem ipsum aut, fuga commodi repellat harum voluptatum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum cum natus ea quasi dolorem praesentium tempora veniam deleniti voluptatibus nostrum! Amet blanditiis molestiae tempora repellat voluptatum voluptas eius harum quas.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quidem numquam quam repudiandae, possimus nostrum vero laboriosam beatae ullam animi quod. Doloribus iusto beatae velit fugiat voluptates natus architecto in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sunt ex nemo minima a facilis reiciendis ducimus alias nam mollitia, sint voluptatem impedit debitis quaerat harum, consequatur recusandae ea error.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor pariatur ad repellendus nesciunt quam maxime fugiat nisi dolores rerum corrupti iusto obcaecati sunt quae iste unde officia, rem blanditiis placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, sapiente eos tenetur similique eius ipsa, ipsum natus vero nisi in aperiam. Dolor, quibusdam. Dolorum eaque explicabo accusantium corporis sunt sit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. A quaerat reprehenderit sit minima facilis dolores dolorum obcaecati illum nulla cupiditate, ipsum incidunt commodi saepe quidem, quia, nihil quibusdam eveniet. Debitis.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+         if ( ilist.style.display == 'block') {
+            ilist.style.display = 'none'
+         } else { ilist.style.display = 'block' }
+         }
+    </script>
+</body>
+</html>
