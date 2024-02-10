@@ -110,7 +110,7 @@ i{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  width: 50%;
+  width: 80%;
   margin: 3px auto;
   border-radius: 8px;
   font-weight: 600;
@@ -122,22 +122,7 @@ i{
   cursor: pointer;
 }
 
-/* Button esqueci minha senha*/
-.box-from-senha {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  padding: 10px;
-  width: 50%;
-  margin: 3px auto;
-  border-radius: 8px;
-  font-weight: 600;
-  color: black;
-  outline: none;
-  border: none; 
-  cursor: pointer;
-}
+
 
 /* Hover de buttons */
 .box-from-btn button:hover{
@@ -149,11 +134,6 @@ i{
   background-color: #37ad57;
 }
 
-.box-from-senha:hover {
-  
-  color: rgb(85, 201, 85);
-  font-size: 13px;
-}
 
 /* Responsividade para celular*/
 @media screen and (max-width: 480px) {
