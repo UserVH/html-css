@@ -24,7 +24,7 @@
   justify-content: start;
   box-sizing: border-box;
   border-radius: 10px 0 0 10px;
-
+  box-shadow: 11px 3px 25px 0 rgba(0, 0, 0, .5);
 }
 
 .box-form{
@@ -41,6 +41,7 @@
 }
 
 .box-from-btn button{
+  
   padding: 10px;
   width: 30%;
   display: flex;
@@ -141,7 +142,7 @@ i{
 /* Hover de buttons */
 .box-from-btn button:hover{
   padding-right: 5px;
-  border-left: 5px solid rgba(0, 0, 0, 0.705);
+  box-shadow: -2px 3px 6px 0px rgba(0, 0, 0, .5);
 }
 
 .box-from-submit button:hover{
